@@ -1,0 +1,27 @@
+.info{
+  perspective-origin: center;
+  perspective: 400px;
+}
+
+
+.upper img {
+  width: 300px;
+  box-shadow: 0 0 10px;
+  transform: scale(1, 1);
+  transition: ease 0.8s 0s;
+ 
+
+}
+.upper img:hover{
+  transform: scale(1.2, 1.2);
+}
+
+.description {
+ padding: 10px;
+}
+
+
+
+
+
+ 

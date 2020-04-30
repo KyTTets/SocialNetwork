@@ -1,0 +1,55 @@
+.item{
+    color: burlywood;
+}
+.dialogs{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: baseline;
+    color: rgb(45, 183, 218);
+    
+}
+.items{
+    
+    padding: 40px;
+    text-decoration: none;
+    display: block;
+    width: 70px;
+    
+}
+
+.dialogs .messages {
+    margin-left: 20px;
+    padding: 10px;
+    color: rgb(64, 126, 240);
+    display: block;
+    width: 100px;
+   
+}
+
+
+.dialogs_items .active {
+    color: gold;
+    
+    
+}
+
+.dialogs {
+    margin-top: 5px;
+    
+    
+}
+.dialogs img{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+
+.message {
+   margin-top: 75px ;
+}
+
+.button{
+   margin-top: 10px;
+    margin-left: 5px;
+}

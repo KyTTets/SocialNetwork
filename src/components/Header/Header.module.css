@@ -1,0 +1,35 @@
+.header{
+    grid-area:h;
+    background: url(https://evolvingwisdom.com/aol/wp-content/uploads/sites/3/2017/05/top-header-background.jpg);
+    background-size: contain;
+    }
+    
+    .header:hover .welcome{
+      animation-play-state: paused;
+  }
+  
+    .logo{      
+      padding: 15px;
+      float: left;
+    }
+
+    .logo img{
+      width: 70px;
+      box-shadow: 0 0 5px; 
+      transition: ease 0.8s 0s;
+  
+    }
+
+    .logo img:hover{
+      transform: scale(1.2, 1.2);
+    }
+
+
+    .welcome{
+      margin-top: 30px;
+      margin-left: 3px;
+      color: rgba(90, 164, 199, 0.938); 
+         
+    }
+
+    

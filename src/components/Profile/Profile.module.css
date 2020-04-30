@@ -1,0 +1,9 @@
+.profilePage{
+  background: url(https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: contain;
+  
+}
+  .content img{
+    width: 1px;
+    height: 200px;
+  }
