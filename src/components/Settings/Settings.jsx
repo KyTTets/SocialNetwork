@@ -4,7 +4,7 @@ const Settings=(props)=>{
     return(
         <div className={s.settings}> 
             <div className={s.square}>  </div>
-            <div className={s.textFromGit}</div>
+            <div> className={s.textFromGit}</div>
         </div>
     )
 }
