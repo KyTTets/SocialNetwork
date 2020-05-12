@@ -3,18 +3,20 @@ import profileReducer from './Profile_reducer';
 import dialogsReducer from './Dialogs_reducer';
 import sidebarReducer from './Sidebar_reducer';
 import MusicReducer from "./Music_reducer";
+import usersReducer from "./Users_reducers";
 
-let reducers = combineReducers ({
+let reducers = combineReducers({
     profilePage: profileReducer,
     dialogsPage: dialogsReducer,
     sideBar: sidebarReducer,
-    musicPage: MusicReducer
+    musicPage: MusicReducer,
+    usersPage: usersReducer
 });
 
 
-let store = createStore (reducers);
+let store = createStore(reducers);
 
-window.store=store;
+window.store = store;
 
 
 
