@@ -1,0 +1,31 @@
+.container {
+   display: flex;
+   flex-direction: row;
+  
+   
+}
+
+.avatar{
+ margin-left: 40px;
+ background-color: rgba(66, 105, 212, 0.39);
+ width: 100px;
+}
+
+.avatar img{
+   width: 70px;
+   height: 70px;
+   border-radius: 35px;
+   
+}
+
+.follower{
+   margin-top: 10px;
+   background-color: green;
+   text-align: center;
+}
+
+.field{
+   background-color: aquamarine;
+   width: 500px;
+   height: 70px;
+}

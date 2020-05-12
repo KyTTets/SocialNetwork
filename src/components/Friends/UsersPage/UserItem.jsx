@@ -1,18 +1,22 @@
 import React from 'react'
-import style from './UserItem.module.css'
+import s from './UserItem.module.css'
 
 
 const UserItem = (props) => {
 
-   debugger;
    return (
       <div>
-         <span>
-            <div><img src={props.avatar}></img></div>
-            <div>{props.userName}</div>
-         </span>
+         <div classname={s.container}>
+            <div className={s.avatar}>
+               <div><img src={props.avatar} /> </div>
+               <div className={s.follower}> Follow </div>
 
-         <span></span>
+            </div>
+
+            <div className={s.field}>{props.userName}</div>
+
+         </div>
+         <div>prosto</div>
       </div>
    )
 }
