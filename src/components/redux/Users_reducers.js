@@ -10,7 +10,7 @@ let initialState = {
             avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: false
         },
         {
-            id: 1, userName: 'Zheka', location: { city: 'Yoshkar-Ola', country: 'Russia' }, status: 'i am create users Page',
+            id: 1, userName: 'Zheka', location: { city: 'Yoshkar-Ola', country: 'Russia' }, status: 'i am create users Page too',
             avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: true
         },
         {

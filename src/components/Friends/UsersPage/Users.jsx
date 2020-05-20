@@ -5,7 +5,14 @@ import UserItem from './UserItem'
 let Users = (props) => {
 
     let state = props.usersPage;
-    let userElements = state.users.map(a => <UserItem userName={a.userName} avatar={a.avatar} key={a.id} />)
+    let userElements = state.users.map(u => <UserItem
+        userName={u.userName}
+        avatar={u.avatar}
+        status={u.status}
+        city={u.location.city}
+        country={u.location.country}
+        follower={u.follower}
+        key={u.id} />)
 
     return (
 
