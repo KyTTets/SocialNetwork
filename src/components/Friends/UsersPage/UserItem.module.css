@@ -1,17 +1,18 @@
 .container {
    display: flex;
    flex-direction: row;
+   margin-top: 20px;
   
    
 }
 
 .avatar{
  margin-left: 40px;
- background-color: rgba(66, 105, 212, 0.39);
  width: 100px;
 }
 
 .avatar img{
+   margin-left: 13px;
    width: 70px;
    height: 70px;
    border-radius: 35px;
@@ -20,12 +21,26 @@
 
 .follower{
    margin-top: 10px;
-   background-color: green;
+   background-color: rgba(0, 128, 0, 0.404);
    text-align: center;
 }
 
 .field{
-   background-color: aquamarine;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-left: 20px;
+   margin-top: 15px;
+   background-color: rgba(127, 255, 212, 0.417);
    width: 500px;
    height: 70px;
+   border: 3px solid rgba(0, 0, 255, 0.301);
+   border-radius: 20px;
+}
+.name {
+margin-left: 10px;
+}
+
+.location{
+margin-right: 10px;
 }

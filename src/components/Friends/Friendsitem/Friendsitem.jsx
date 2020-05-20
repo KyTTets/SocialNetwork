@@ -10,7 +10,7 @@ const FriendsItem = (props) => {
                     {props.name}
                 </div>
                 <div>
-                <img src={props.image} />
+                    <img src={props.image} />
                 </div>
             </div>
         </div>
