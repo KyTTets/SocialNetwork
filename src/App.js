@@ -21,10 +21,9 @@ function App(props) {
 
       <div className='app-wrapper-content'>
         <Route path='/dialogs'
-          render={() => <DialogsContainer dispatch={props.dispatch}
-            store={props.store} />} />
+          render={() => <DialogsContainer />} />
         <Route path='/profile'
-          render={() => <Profile store={props.store} />} />
+          render={() => <Profile />} />
         <Route path='/news' render={() => <News />} />
         <Route path='/music' render={() => <MusicContainer />} />
         <Route path='/settings' render={() => <Settings />} />

@@ -7,18 +7,18 @@ let initialState = {
     users: [
         {
             id: 1, userName: 'Zheka', location: { city: 'Yoshkar-Ola', country: 'Russia' }, status: 'i am create users Page',
-            avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: false
-        },
-        {
-            id: 1, userName: 'Zheka', location: { city: 'Yoshkar-Ola', country: 'Russia' }, status: 'i am create users Page too',
             avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: true
         },
         {
-            id: 1, userName: 'Sasha', location: { city: 'Moscow', country: 'Russia' }, status: 'i am create users Page',
+            id: 2, userName: 'Zheka', location: { city: 'Yoshkar-Ola', country: 'Russia' }, status: 'i am create users Page too',
+            avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: true
+        },
+        {
+            id: 3, userName: 'Sasha', location: { city: 'Moscow', country: 'Russia' }, status: 'i am create users Page',
             avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: false
         },
         {
-            id: 1, userName: 'Oleg', location: { city: 'Mari-Oshaevo', country: 'Russia' }, status: 'i am create users Page',
+            id: 4, userName: 'Oleg', location: { city: 'Mari-Oshaevo', country: 'Russia' }, status: 'i am create users Page',
             avatar: 'https://zm-cs.ru/files/avatars/1537189754.jpg', follower: true
         },
 
@@ -28,7 +28,7 @@ let initialState = {
 }
 
 const usersReducer = (state = initialState, action) => {
-
+    debugger;
     switch (action.type) {
         case SET_USERS:
             return { ...state, users: [...state.users, ...action.users] }
