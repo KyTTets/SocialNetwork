@@ -6,6 +6,30 @@
    
 }
 
+.pagesField{
+   width: 200px;
+   margin-top: 20px;
+   margin-left: 350px;
+   margin-bottom: 30px;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.currentPage {
+   margin-right: 2px;
+   font-weight: bolder;
+   cursor: pointer;
+   transition: ease 1s 0s;
+   
+}
+
+.currentPage :hover {
+   scale: (5, 1.2);
+}
+
 .avatar{
  margin-left: 40px;
  width: 100px;
