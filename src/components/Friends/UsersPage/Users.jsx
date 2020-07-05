@@ -1,24 +1,30 @@
 import React from 'react';
 import s from './Users.module.css';
 import * as axios from 'axios';
-import userPhoto from '../../../assets/images/user.png'
+import userPhoto from '../../../assets/images/user.png';
+import Reloader from '../../../assets/images/25.gif'
+
 
 
 class Users extends React.Component {
 
     componentDidMount() {
+        this.props.isFetcher(true)
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pagesSize}`)
             .then(response => {
                 this.props.setUsers(response.data.items);
                 this.props.setTotalUsersCount(response.data.totalCount);
+                this.props.isFetcher(false)
             });
     }
 
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
+        this.props.isFetcher(true)
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pagesSize}`)
             .then(response => {
                 this.props.setUsers(response.data.items);
+                this.props.isFetcher(false)
             });
     }
     render() {
@@ -30,6 +36,7 @@ class Users extends React.Component {
         }
 
         return <div>
+            <div>  <img src={this.props.isFetcher ? null : Reloader} /></div>
             <div className={s.pagesField}>
                 {pages.map(p => {
                     return <div className={s.page}>

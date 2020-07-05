@@ -4,12 +4,14 @@ const SHOWMORE = 'SHOWMORE';
 const SET_USERS = 'SET_USERS';
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT'
+const IS_FETCH = 'IS_FETCH'
 
 let initialState = {
     users: [],
     totalUsersCount: 0,
     pagesSize: 5,
-    currentPage: 4
+    currentPage: 4,
+    isFetch: false
 
 
 }
@@ -52,6 +54,11 @@ const usersReducer = (state = initialState, action) => {
                 ...state, totalUsersCount: action.count
 
             }
+        case IS_FETCH:
+            return {
+                ...state, isFetch: action.isFetch
+
+            }
         default:
             return state;
     }
@@ -64,5 +71,6 @@ export const showMoreAC = () => ({ type: SHOWMORE })
 export const setUsersAC = (users) => ({ type: SET_USERS, users })
 export const setCurrentPageAC = (currentPage) => ({ type: SET_CURRENT_PAGE, currentPage })
 export const setTotalUsersCountAC = (totalUsersCount) => ({ type: SET_TOTAL_USERS_COUNT, count: totalUsersCount })
+export const isFetchAC = (isFetch) => ({ type: IS_FETCH, isFetch })
 
 export default usersReducer;
