@@ -7,7 +7,7 @@
 }
 
 .pagesField{
-   width: 200px;
+   width: 250px;
    margin-top: 20px;
    margin-left: 350px;
    margin-bottom: 30px;
@@ -15,19 +15,25 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+  
    cursor: pointer;
 }
 
+.page {
+   flex-grow: 0a;
+}
+
 .currentPage {
-   margin-right: 2px;
+   
    font-weight: bolder;
    cursor: pointer;
-   transition: ease 1s 0s;
+   
    
 }
 
 .currentPage :hover {
-   scale: (5, 1.2);
+  
+   
 }
 
 .avatar{
