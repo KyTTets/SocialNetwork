@@ -46,18 +46,16 @@ const usersReducer = (state = initialState, action) => {
         case SET_CURRENT_PAGE:
             return {
                 ...state, currentPage: action.currentPage
-
             }
 
         case SET_TOTAL_USERS_COUNT:
             return {
                 ...state, totalUsersCount: action.count
-
             }
+            debugger;
         case IS_FETCH:
             return {
                 ...state, isFetch: action.isFetch
-
             }
         default:
             return state;
