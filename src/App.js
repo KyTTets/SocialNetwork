@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
+import ProfileContainer from './components/Profile/ProfileContaner';
 import { Route } from 'react-router-dom';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
@@ -23,7 +23,7 @@ function App(props) {
         <Route path='/dialogs'
           render={() => <DialogsContainer />} />
         <Route path='/profile'
-          render={() => <Profile />} />
+          render={() => <ProfileContainer />} />
         <Route path='/news' render={() => <News />} />
         <Route path='/music' render={() => <MusicContainer />} />
         <Route path='/settings' render={() => <Settings />} />

@@ -9,7 +9,7 @@
   box-shadow: 0 0 10px;
   transform: scale(1, 1);
   transition: ease 0.8s 0s;
- 
+  margin-bottom: 50px; 
 
 }
 .upper img:hover{
@@ -17,7 +17,21 @@
 }
 
 .description {
+ display: flex;
  padding: 10px;
+}
+
+.info {
+  
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+}
+
+.worker img{
+  width: 200px;
+  height: 150px;
 }
 
 

@@ -2,13 +2,14 @@ import React from 'react';
 import s from './Users.module.css';
 import userPhoto from '../../../assets/images/user.png';
 import Reloader from '../../../assets/images/25.gif';
+import { NavLink } from 'react-router-dom';
 
 
 
 let Users = (props) => {
 
     let smallUsers = Math.ceil(props.totalUsersCount / 100)//уменьшенное количество пользователей 
-    let pagesCount = Math.ceil(smallUsers / props.pagesSize);
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pagesSize);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i)
@@ -28,12 +29,16 @@ let Users = (props) => {
             })}
 
         </div>
-        <div>Общее число пользователей: {smallUsers}</div>
+        <div>Общее число пользователей: {props.totalUsersCount}</div>
         {props.users.map(u => <div key={u.id}>
 
             <div className={s.container}>
                 <div className={s.avatar}>
-                    <div><img src={u.photos.small != null ? u.photos.small : userPhoto} /> </div>
+                    <div>
+                        <NavLink to={'/profile/' + u.id}>
+                            <img src={u.photos.small != null ? u.photos.small : userPhoto} />
+                        </NavLink>
+                    </div>
                     <div className={s.follower}>
                         {u.follower
                             ? <button onClick={() => { props.unfollow(u.id) }}>Unfollow</button>
